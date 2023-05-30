@@ -1,0 +1,5 @@
+.nav-item a.active {
+  text-decoration: none;
+  color: var(--base-color);
+  font-weight: 500;
+}

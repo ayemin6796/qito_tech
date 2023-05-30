@@ -1,0 +1,13 @@
+:root {
+  --base-white-card: #f2f2f2;
+}
+.card {
+  background-color: #f7f4f4 !important;
+}
+.btn-orange {
+  background-color: orange !important;
+  color: white !important;
+}
+.border-main {
+  border: 3px solid #31826d !important;
+}

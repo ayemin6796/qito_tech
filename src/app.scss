@@ -1,0 +1,13 @@
+$modal-sm: 360px;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --base-color: #208a75;
+  --base-white-color: #f2f2f2;
+}
+body {
+  background-color: var(--base-color);
+  margin: 0 !important;
+}
