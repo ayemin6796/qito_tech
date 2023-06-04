@@ -73,7 +73,7 @@ const Page_card = (props) => {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
-              Modal
+              Get Now
             </button>
           ) : (
             <a
@@ -90,7 +90,18 @@ const Page_card = (props) => {
               {props.purchase} Now
             </a>
           )}
-          <ModalBox />
+          <ModalBox
+            title={props.modalTitle}
+            hostname={props.modalHostName}
+            servername={props.modalServerName}
+            username={props.modalUserName}
+            password={props.modalPassword}
+            createDate={props.modalCreateDate}
+            expiredDate={props.modalExpiredDate}
+            sshport={props.modalsshport}
+            udpgwport={props.modaludpgwport}
+            publicKey={props.modalPublicKey}
+          />
         </div>
       </div>
     </>

@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Outline from "./Pages/Outline";
 import Main from "./Pages/main";
 import "./app.scss";
+import Footer from "./components/Footer";
 
 export function App() {
   return (
@@ -14,7 +15,7 @@ export function App() {
           <Title_nav />
         </div>
       </div>
-      <div className="col-12 bg-violet">
+      <div className="col-12">
         <Nav />
       </div>
       <Routes>

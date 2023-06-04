@@ -1,6 +1,3 @@
-.hightlight {
-  color: #cb1f1f !important;
-}
 .bg-gradient-self {
   background: #ee2536; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -17,16 +14,19 @@
   background-clip: text;
   color: transparent;
 }
+.up {
+  z-index: 9999;
+}
 
-@media screen and (max-width: 1400px) and (min-width: 992px) {
-  .outline-align{
+@media screen and (max-width: 2100px) and (min-width: 1200px) {
+  .outline-align {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: absolute;
-    top: 50;
-    left: 50;
-    translate: middle;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
-

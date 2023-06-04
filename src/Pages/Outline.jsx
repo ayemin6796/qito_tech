@@ -1,19 +1,20 @@
 import React from "react";
 import Page_card from "../components/page_card";
 import "./Outline.css";
+import Footer from "../components/Footer";
 
 const Outline = () => {
   return (
     <>
       <div className="container">
         <div className="row outline-align">
-          <div className="text-white text-center mt-3">
+          <div className="text-white text-center my-4">
             <h2 className="display-6 fw-semibold">Outline Premium VPN</h2>
             <p className="fs-6">ချိတ်ဆက်မှု ၂ဆပိုမြန်ဆန် Outline Premium VPN</p>
 
             <div className="container">
-              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-lg-5 ">
-                <div className="col px-0">
+              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-lg-5 my-md-3">
+                <div className="col px-0 d-flex d-md-block d-lg-block justify-content-center">
                   <div
                     class="card text-center text-black"
                     style="width: 18rem;"
@@ -49,15 +50,16 @@ const Outline = () => {
                       <a
                         href="https://t.me/qitotech"
                         class="btn btn-warning rounded rounded-pill"
+                        target="_blank"
                       >
                         Buy Now
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="col px-0">
+                <div className="col px-0 d-flex d-md-block d-lg-block justify-content-center">
                   <div
-                    class="card text-center bg-success z-3"
+                    class="card text-center bg-success z-3 mx-auto mx-sm-0 mx-lg-0"
                     style="width: 18rem;"
                   >
                     <div class="card-header fs-5 ">TWS Ouline Key</div>
@@ -84,15 +86,16 @@ const Outline = () => {
                       <a
                         href="https://t.me/qitotech"
                         class="btn btn-warning rounded rounded-pill"
+                        target="_blank"
                       >
                         Buy Now
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="col px-0">
+                <div className="col px-0 d-flex d-md-block d-lg-block justify-content-center mb-5">
                   <div
-                    class="card text-center text-black"
+                    class="card text-center text-black mx-auto mx-sm-0 mx-lg-0"
                     style="width: 18rem;"
                   >
                     <div class="card-header bg-first fs-5">
@@ -124,6 +127,7 @@ const Outline = () => {
                       <a
                         href="https://t.me/qitotech"
                         class="btn btn-warning rounded rounded-pill"
+                        target="_blank"
                       >
                         Buy Now
                       </a>
@@ -134,6 +138,9 @@ const Outline = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-100 position-fixed bottom-0">
+        <Footer />
       </div>
     </>
   );

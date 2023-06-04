@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ModalBox = () => {
+const ModalBox = (props) => {
   return (
     <div
       class="modal fade"
@@ -14,7 +14,7 @@ const ModalBox = () => {
           <div class="modal-header">
             <h1 class="modal-title fs-4 text-start" id="exampleModalLabel">
               Create New Account
-              <p className="d-block fs-6 mb-0">SSH SlowDNS SGP 1</p>
+              <p className="d-block fs-6 mb-0">{props.title}</p>
             </h1>
             <button
               type="button"
@@ -26,42 +26,40 @@ const ModalBox = () => {
           <div class="modal-body">
             <div className="d-flex justify-content-between">
               <p>Hostname:</p>
-              <p>sgp1.slowdns.me</p>
+              <p>{props.hostname}</p>
             </div>
             <div className="d-flex justify-content-between">
               <p>NS (name server):</p>
-              <p>ns-sgp1.slowdns.me</p>
+              <p>{props.servername}</p>
             </div>
             <div className="d-flex justify-content-between">
               <p>Username:</p>
-              <p>sshocean-hoo</p>
+              <p>{props.username}</p>
             </div>
             <div className="d-flex justify-content-between">
               <p>Password:</p>
-              <p>xywyz8qangaqizveh</p>
+              <p>{props.password}</p>
             </div>
             <div className="d-flex justify-content-between">
               <p>Created:</p>
-              <p>21 May 2023</p>
+              <p>{props.createDate}</p>
             </div>
             <div className="d-flex justify-content-between">
               <p>Expired:</p>
-              <p>23 May 2023</p>
+              <p>{props.expiredDate}</p>
             </div>
             <div className="d-flex justify-content-between">
               <p>SSH Port:</p>
-              <p>22</p>
+              <p>{props.sshport}</p>
             </div>
             <div className="d-flex justify-content-between">
               <p>UDPGW Port:</p>
-              <p>7200, 7300</p>
+              <p>{props.udpgwport}</p>
             </div>
           </div>
           <div class="modal-footer justify-content-center">
             <h4>DNS Public Key</h4>
-            <div className="small text-wrap w-100 p-2">
-              b4214f224903b97e34d5cb58c6e1f94d8509e80c0ef34c78cf4f8ec949fb861c
-            </div>
+            <div className="small text-wrap w-100 p-2">{props.publicKey}</div>
           </div>
         </div>
       </div>
